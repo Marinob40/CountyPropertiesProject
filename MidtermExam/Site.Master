@@ -1,0 +1,26 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MidtermExam.Site" ClientIDMode="Static" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Midterm Exam</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <asp:ContentPlaceHolder ID="headPlaceholder" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+<div class="container">
+    <form id="form1" class="form-vertical" runat="server">
+    <a href="Default.aspx">
+        <header class="jumbotron"></header>
+    </a>
+            <asp:ContentPlaceHolder ID="mainPlaceholder" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</div>
+</body>
+</html>
