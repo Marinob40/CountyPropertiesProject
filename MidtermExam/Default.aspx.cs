@@ -11,12 +11,11 @@ namespace MidtermExam
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack)
-            {
 
-            }
         }
 
+        //Will display different properties according to option chosen in dropdown.
+        //Will display images of property and information when property is clicked
         protected void ddlCounties_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ddlCounties.SelectedItem.Value == "1")
